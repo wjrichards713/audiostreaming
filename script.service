@@ -1,0 +1,9 @@
+[Unit]
+Description=Auto Start Up
+After=network.target
+[Service]
+ExecStart=/bin/bash /home/pi/Desktop/script.sh
+Restart=on-failure
+RestartSec=3
+[Install]
+WantedBy=default.target
