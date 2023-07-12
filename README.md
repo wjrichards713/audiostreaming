@@ -15,18 +15,15 @@ Stream Audio From Raspberry Pi
     
     pip3 install pyvirtualdisplay
     
-
-##############################
 run test.py and check if every things works well
 
     python3 test.py
-#########################################
+Save create shell script file
 
     Cd Desktop
     nano script.sh
     Inside script.sh python3 /home/pi/Desktop/test.py
     chmod +x /home/pi/Desktop/script.sh
-#####################################
 
 Step3(run in auto start):
 
