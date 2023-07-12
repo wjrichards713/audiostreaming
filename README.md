@@ -14,6 +14,8 @@ Stream Audio From Raspberry Pi
     sudo apt-get install chromium-chromedriver
     
     pip3 install pyvirtualdisplay
+    apt-get install lubuntu-core xvfb x11vnc
+
     
 run test.py and check if every things works well
 
