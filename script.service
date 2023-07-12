@@ -2,7 +2,7 @@
 Description=Auto Start Up
 After=network.target
 [Service]
-ExecStart=/bin/bash /home/pi/Desktop/script.sh
+ExecStart=/bin/bash /home/pi/Desktop/audiostreaming/script.sh
 Restart=on-failure
 RestartSec=3
 [Install]
