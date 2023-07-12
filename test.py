@@ -14,7 +14,7 @@ opt.add_argument('--auto-accept-camera-and-microphone-capture')
 opt.add_experimental_option("prefs", {
     "profile.default_content_setting_values.automatic_downloads": 1,
     "profile.default_content_setting_values.media_stream_mic": 1,
-    "profile.default_content_setting_values.media_stream_camera": 1,
+    "profile.default_content_setting_values.media_stream_camera": 0,
     "profile.default_content_setting_values.geolocation": 0,
     "profile.default_content_setting_values.notifications": 1
 })
