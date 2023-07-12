@@ -27,11 +27,26 @@ give access to script
 run in auto start:
 
     cd .config/
-    
-    nano .config/systemd/user/script.service
-    systemctl --user daemon-reload
-    journalctl --user -u script.service
-    cd .config/systemd/user/
-    systemctl --user enable script.service
-    systemctl --user status script.service
+    mkdir systemd
+    cd systemd
+    mkdir user
+    cd user
+    cp /home/pi/Desktop/audiostreaming/script.service /home/pi/.config/systemd/user/script.service
+    cd ..
+
+#reload the auto start demon
+
+    systemctl --user daemon-reload 
+
+#enable the autostart service
+
+    systemctl --user enable script.service 
+
+#start the system
+
+    systemctl --user restart script.service 
+
+#check the status of the system
+
+    systemctl --user status script.service 
 
