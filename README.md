@@ -10,20 +10,24 @@ Stream Audio From Raspberry Pi
     sudo apt-get install chromium-chromedriver
     pip3 install pyvirtualdisplay
     sudo apt-get install xvfb
-  
-run test.py and check if every things works well
 
-    sudo chmod+x test.py
+git clone for the file 
+
+    cd Desktop/
+    git clone https://github.com/wjrichards713/audiostreaming.git
+run test.py and check if everything works well
+
+    cd audiostreaming/
     python3 test.py
-Save create shell script file
-
-    Cd Desktop
-    nano script.sh
-    Inside script.sh python3 /home/pi/Desktop/test.py
-    chmod +x /home/pi/Desktop/script.sh
+give access to script
+    
+    sudo chmod +x script.sh
+    cd
 
 run in auto start:
 
+    cd .config/
+    
     nano .config/systemd/user/script.service
     systemctl --user daemon-reload
     journalctl --user -u script.service
