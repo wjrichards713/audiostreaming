@@ -1,1 +1,1 @@
- python3 /home/pi/Desktop/audiostreaming/test.py
+ python3 /home/{user}/Desktop/audiostreaming/test.py
