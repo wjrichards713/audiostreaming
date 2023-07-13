@@ -1,4 +1,7 @@
 # audiostreaming
+prerequsite
+
+    Raspberrian os full(64 bit)
 Stream Audio From Raspberry Pi 
 
   Install library 
@@ -31,7 +34,7 @@ run in auto start:
     cd systemd
     mkdir user
     cd user
-    cp /home/pi/Desktop/audiostreaming/script.service /home/pi/.config/systemd/user/script.service
+    cp /home/{user}/Desktop/audiostreaming/script.service /home/{user}/.config/systemd/user/script.service
     cd ..
 
 #reload the auto start demon
